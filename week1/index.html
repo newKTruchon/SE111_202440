@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--the head holds important info for browser to load-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="K TRUCHON">
+    <meta name="description" content="Week 1 Demo">
+
+    <title>W1 | Demo</title>
+</head>
+<body>
+    <!--the body holds ALL CONTENT for the page-->
+    <!--this is a comment in HTML-->
+
+    <!--heading tags are Block Level Elements (BLEs)-->
+    <!--BLEs create structure for page - they are literal blocks / rectangles; start on a new left hand aligned line-->
+    <h1 style="border:1px solid red;">Heading 1</h1><!--ONE h1 per page; content supports SEO-->
+    <h2 style="border:1px solid orangered;">Heading 2</h2>
+    <h3 style="border:1px solid yellow;">Heading 3</h3>
+    <h4 style="border:1px solid green;">Heading 4</h4>
+    <h5 style="border:1px solid blue;">Heading 5</h5>
+    <h6 style="border:1px solid violet;">Heading 6</h6>
+
+    <!--horizontal rule - self-closing; spits out a BLE line-->
+    <hr>
+
+    <!--LISTS! we have ordered (numbered) and unordered (bulleted)-->
+    <!--lists require: a type of list AND list items-->
+
+    <h2>Favorite Dragons</h2>
+
+    <ol><!--ordered list type-->
+        <li>Drogon</li>
+        <li>Syrax</li>
+        <li>Moondancer</li>
+        <li>Vermithor</li>
+        <li>Cannibal</li>
+    </ol>
+
+    <h2>My Hobbies</h2>
+
+    <ul><!--unordered list type-->
+        <li>Hanging with My Animals</li>
+        <li>Gardening</li>
+        <li>Reading</li>
+        <li>Watching Stuff</li>
+        <li>Couch Goblin</li>
+    </ul>
+
+    <hr>
+    
+    <h2>Paragraph Tags - for body text content</h2>
+    
+    <p>Hello world! This is my first paragraph tag! I am typing some extra words to showcase how this Block Level Element operates/looks inside of a browser page. More words and things.      
+   
+        <br> <!--break space; creates a new line -->
+        <br>
+        <br><br><br>
+    Hello. Dragons are awesome.</p>
+
+    <hr>
+
+    <h2>Divs - divs (divisions/dividers) create sections of content; they ONLY hold *other HTML elements* (never text content on its own</h2>
+
+    <div style="border:1px solid grey; background-color:black;font-family:Helvetica; color:white;">
+        <h4>About Me</h4>
+
+        <p>Hi my name it KT and <u>I</u> <i><u>LOVE</u></i> <b>DRAGONS</b>! (and wyverns)</p>
+
+    </div>
+
+
+    <hr>
+
+    <!--IMAGES! are considered BOTH inline AND block level XD-->
+    <!--we will primarily use them as BLEs-->
+    <img src="https://hips.hearstapps.com/hmg-prod/images/meleys-house-of-the-dragon-1665165572.jpg" alt="Meleys from HoTD flying over the bay" width="500">
+    <!--above is an example of an ABSOLUTE image path [boooooooo]-->
+
+    <!--relative file paths are BEST! these live directly within the root folder-->
+    <img src="images/dragon_sizes.webp" alt="dragon size comparisons in GoT" width="500">
+
+    <img src="images/vermithor.jpg" alt="vermithor's eye in fire light" width="500">
+
+    <!--IMG requires 2 attributes:
+        *src > file path to image
+        *alt > alternative text; what is read on screenreaders, supports SEO, and appears if file path is broken
+    -->
+
+    <hr>
+
+    <h2>Hypertext Links</h2>
+
+    <p>Hypertext links give us access to <a href="https://www.neit.edu">other pages</a>! They are known as the <i>anchor</i> tag.</p>
+
+</body>
+</html>
