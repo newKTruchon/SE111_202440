@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Katie Truchon">
+    <meta name="description" content="W3D2 Demo - Multi Page Websites">
+
+    <title>W3 | Demo - Hobbies</title>
+
+    <!--in-document style tag-->
+    <style>
+        /*in here write CSS*/
+
+        div {
+            /*ALL div elements on THIS page will take the following styling*/
+            border:1px solid black;
+            padding:10px; /*adds space between element content and border*/
+            margin:10px; /*adds space between border of element and next element*/
+        }
+
+        #wrapper {
+            width:980px;
+            margin:auto; /*MUST have a width set; centers element w/ equal L & R space in page*/
+            background-color:darkgrey;
+
+        }
+
+        #nav {
+            background-color:white;
+        }
+
+        .bg {
+            background-color:black;
+            color:white;
+        }
+
+        .fancy {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!--#WRAPPER: holds all content on page!-->
+    <div id="wrapper">
+
+        <!--#HEADER-->
+        <div id="header" class="bg">
+
+            <h1>W3 | Multi Page Demo</h1>
+
+        </div><!--/ #header-->
+
+        <!--#NAV: use RELATIVE LINKS for internal pages of the web site!-->
+        <div id="nav">
+
+            <!--create a new div to hold the buttons; this div can later be centered in the nav-->
+            <div id="buttons">
+
+                <a href="index.html">ABOUT</a>
+                <a href="schools.html">SCHOOLS</a>
+                <a href="hobbies.html">HOBBIES</a>
+
+            </div><!--/ #buttons-->
+
+        </div><!--/ #nav-->
+
+        <!--#CONTENT: *this* page's main content; ONLY part that changes from page to page once mainframe is built-->
+        <div id="content">
+
+            <h2 class="fancy">This is the <b>HOBBIES</b> page.</h2>
+
+            <img src="images/boston.jpg" alt="" width="500">
+
+        </div><!--/ #content-->
+
+        <!--#FOOTER: final notes; make sure to include your validation screenshot-->
+        <div id="footer" class="bg">
+
+            <a href="#header">Jump to Top!</a> <br>
+
+            <p class="fancy">&copy; K TRUCHON | SE111 | 202440</p>
+
+            <!--MAKE SURE TO INCLUDE A VALIDATION SCREENSHOT FOR *THIS* PAGE-->
+
+        </div><!--/ #footer-->
+
+    </div><!--/ #wrapper-->
+    
+</body>
+</html>
