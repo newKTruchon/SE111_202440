@@ -29,6 +29,7 @@
 
         #nav {
             background-color:white;
+            min-height:50px;
         }
 
         .bg {
@@ -39,6 +40,39 @@
         .fancy {
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
+        }
+
+        #buttons {
+            border:none;
+            padding:none;
+            margin:none;
+            width:535px;
+            /*to use margin-auto, you must first set a width*/
+            margin:auto;
+        }
+        
+        .nav-links {
+            width:150px;
+            height:50px;
+            text-align:center;
+            /*match line-height to height to center vertically*/
+            line-height:50px;
+            font-size:24px;
+            float:left;
+            margin-right:25px;
+            text-decoration:none;
+        }
+
+        .nav-links:hover{
+            background-color:black;
+            color:white;
+        }
+
+        .clear {
+            clear:both;
+            border:none;
+            padding:none;
+            margin:none;
         }
 
 
@@ -62,11 +96,14 @@
             <!--create a new div to hold the buttons; this div can later be centered in the nav-->
             <div id="buttons">
 
-                <a href="index.html">ABOUT</a>
-                <a href="schools.html">SCHOOLS</a>
-                <a href="hobbies.html">HOBBIES</a>
+                <a href="index.html" class="nav-links">ABOUT</a>
+                <a href="schools.html" class="nav-links">SCHOOLS</a>
+                <a href="hobbies.html" class="nav-links">HOBBIES</a>
 
             </div><!--/ #buttons-->
+
+            <!--since we need to float the above links for them to appear as their true size (button blocks) we need to clear below them or the page starts to get funky-->
+            <div class="clear" style="clear:both;border:none;padding:none;margin:none;"></div>
 
         </div><!--/ #nav-->
 
