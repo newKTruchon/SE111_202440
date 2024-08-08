@@ -8,18 +8,73 @@
     <meta name="description" content="Repo Index File">
 
     <title>KT's GitHub Repo Home Page</title>
+
+            <!--in-document styling - stated one time in the document, applies to anything selected in the document!-->
+            <style>
+                body {
+                    font-family:Calibri, sans-serif;
+                    background-color:lightslategray;
+                }
+        
+                #wrapper {
+                    background-color:lightgrey;
+                    width:900px;
+                    padding:25px; /*i add space inside of the lement's border*/
+                    margin:auto;/*i aauto center the element in the page*/
+                    border:2px solid black;
+                    box-shadow: 2px 2px 2px black; /*i add a drop shadow!*/
+                    border-radius:10px; /*i round rectangle corners!*/
+                    /*margin-top:10px; /*i move the element away from the top of the browser chrome*/
+                
+                }
+        
+                #header, #content, #footer {
+        
+                    padding:15px;
+                    margin:20px;
+                }
+        
+                img {
+        
+                    width:400px;
+                    border:1px solid lightgrey
+                }
+        
+                #header {
+        
+                    text-align:center;
+                }
+        
+                #footer {
+                    font-size:10px;
+                    text-align:center;
+                }
+        
+                a:hover {
+                    background-color:white;
+                }
+
+                .done {
+                    font-weight:bold;
+                    color:rgb(2, 121, 2);
+                }
+
+                .soon {
+                    color:rgb(118, 1, 1);
+                }
+            </style>
 </head>
 <body>
 
     <div id="wrapper">
-        <!--HEADER-->
+        <!--HEADER -- page title and space for hero image/banner + instructions-->
         <div id="header">
+            <h1>&#9733; &#9733; &#9733; Hello World! &#9733; &#9733; &#9733;</h1> 
+            <h2>Welcome to my SE111 Resource Directory :]</h2>
+            <h4>If something is missing that you need, please send me an email: kmtruchon@neit.edu</h4>
+            <p><i>Remember ... you can also reveal the code to any of these pages directly in browser by hitting the F12 key or opening the Developer Tools in your browser's options.</i></p>
 
-            <h1>KT's Remote Repo Home</h1>
-            <h4><i>A place for all of my SE111 files</i></h4>
-            <br>
-            <h4><a href="https://github.com/newKTruchon/SE111_202440" target="_blank">Visit my GitHub</a></h4>
-
+            <img src="extras/devTools.png" alt="image shows the 3 step process to open Develper Tools in Google Chrome. a sly sunglassed cat with a rubber ducky is sat on a pink background in the open broswer page">
         </div><!--/ #header-->
 
         <!--NAVIGATION / MAIN CONTENT-->
@@ -31,7 +86,7 @@
 
                 <ul>
                     <li><a href="week1/index.html">W1 | Intro Demo</a></li>
-                    <li><a href="w1/index.html">W1 | First Bio</a></li>
+                    <li><a href="week1/w1/index.html">W1 | First Bio Assignment </a><span class="done">[Complete!]</span></li>
                 </ul>
             </div><!--/ .class-->
 
@@ -39,12 +94,12 @@
                 <h2>Week #2</h2>
 
                 <ul>
-                    <li><a href="week2/index.html">W2 | Attributes Demo</a></li>
+                    <li><a href="week2/W2D2/index.html">W2 | Attributes Demo</a></li>
                     
-                    <li><a href="file-paths-incorrect/file-paths-incorrect/index.html">W2 | Incorrect File Paths [Avaialble 7.31]</a></li>
-                    <li><a href="file-paths-correct/index.html">W2 | Correct File Paths [Avaialble 7.31]</a></li>
+                    <li><a href="week2/file-paths-incorrect/file-paths-incorrect/index.html">W2 | Incorrect File Paths </a> <span class="done">[Complete!]</span></li>
+                    <li><a href="week2/file-paths-correct/index.html">W2 | Correct File Paths</a> <span class="done">[Complete!]</span></li>
 
-                    <li><a href="w2-bio/index.html">W2 | Bio Page [Avaialble 7.31]</a></li>
+                    <li><a href="week2/w2-bio/index.html">W2 | Bio Page </a> <span class="done">[Complete!]</span></li>
                 </ul>
             </div><!--/ .class-->
 
@@ -53,6 +108,19 @@
 
                 <ul>
                     <li><a href="week3/index.html">W3 | Multi-Page Demo</a></li>
+                    <li><a href="week3/w3-bio/index.html">W3 | Multi-Page Bio </a> <span class="soon">[Available 8.9]</span></li>
+                    
+                    
+                </ul>
+            </div><!--/ .class-->
+
+            <div class="week">
+                <h2>Week #4</h2>
+
+                <ul>
+                    <li><a href="week4/W4Review/index.html">HTML REVIEW FILE</a> - <i>Use for Quiz #4 Studying</i></li>
+                    <li><a href="week4/w4_demo/index.html">W4 | Demo</a></li>
+                    <li><a href="week4/w4-movie/index.html">W4 | Movie Review Site </a><span class="soon">[Available 8.16]</span></li>
                     
                     
                 </ul>
