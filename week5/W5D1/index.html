@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="K TRUCHON">
+    <meta name="description" content="Week 5D1 Demo">
+
+    <title>Tables & Forms</title>
+
+    <style>
+        table, tr, td {
+            border:1px solid black;
+        }
+
+        thead {
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>W#5 - Tables & Forms</h1>
+
+    <h2><i>Tables</i></h2>
+    <!--TABLES! they help make things align and suport UI/UX + trust in applications-->
+
+    <table>
+        <thead>
+          <tr>
+            <td>Month</td>
+            <td>Savings</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>January</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td>February</td>
+            <td>$80</td>
+          </tr>
+          <tr>
+            <td>March</td>
+            <td>$50</td>
+          </tr>
+          <tr>
+            <td>January</td>
+            <td>$100</td>
+          </tr>
+         
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Sum</td>
+            <td>$180</td>
+          </tr>
+        </tfoot>
+    </table>
+
+
+
+    <h2><i>Forms</i></h2>
+    <!--we can gain values (input or value) via the website and process it with Javascript!-->
+    <!--in order to gain data from the user, we have to provide them with specialized elements that accept input from the user-->
+
+    <form method="" action="">
+        <label for="username">Name: </label>
+        <input type="text" name="username" id="first" placeholder="User First Name" required> 
+        <br>
+        <label for="last">Last: </label>
+        <input type="text" name="username" id="last" placeholder="User Last Name" required> <br>
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="pass" placeholder="Password" required>
+        <br>
+        <input type="submit" >
+    </form>
+
+
+
+    <h2><i>Tables & Forms</i></h2>
+    <!--we use tables to align form data -->
+
+    <form method="GET" action="">
+
+        <table>
+            <tbody>
+                <tr>
+                    <td>Labels</td>
+                    <td>Inputs</td>
+                </tr>
+
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" name="name" id="name" placeholder="Your First Name"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="l-name">Last Name:</label></td>
+                    <td><input type="text" name="l-name" id="l-name" placeholder="Your Last Name"></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </form>
+    
+</body>
+</html>
