@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Hello World!</h1>
+    <form>
+        <input type="text" id="first">
+        <input type="button" id="enter-button" value="Enter">
+      </form>
+
+
+
+      <script>
+        document.querySelector(`#enter-button`).addEventListener(`click`, alertName)
+        function alertName(e)
+        {
+            console.log(document.querySelector(`#first`))
+            console.log(document.querySelector(`#first`).value)
+          alert(document.querySelector(`#first`))
+        }
+
+
+        var text = document.querySelector(`h1`)
+        console.log(text.innerHTML)
+        alert(`watch the h1!`)
+        text.innerHTML = `Goodbye World!`
+        text.style.color = `red`
+        text.id = `hello`
+      </script>
+
+
+</body>
+</html>
